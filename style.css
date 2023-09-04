@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgb(124, 255, 144), rgb(160, 255, 225));
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0;
+  background: url(h1_bg.jpg);
+  background-size: contain;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: underline black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  color: black;
+}
+
+input {
+  font-size: 2rem;
+  padding: 0.2rem 2.5rem;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+button {
+  padding: 0.5rem 3rem;
+  font: 800 1.2rem sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  outline: none;
+  margin-top: 1rem;
+}
+
+u {
+  color: rgb(235, 0, 0);
+  margin-top: 1rem;
+  font: 700 1.5rem serif;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem 0 4rem 0;
+  font: 700 4rem "Gill Sans";
+  background: linear-gradient(to right, rgb(7, 181, 255), rgb(255, 33, 199));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.counterTimer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font: 800 3rem verdana;
+  gap: 2rem;
+}
+
+.para {
+  background: linear-gradient(to right, rgb(227, 29, 62), rgb(28, 28, 26));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .counterTimer {
+    flex-direction: column;
+    font: 800 2rem verdana;
+    gap: 1rem;
+  }
+
+  u {
+    word-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input {
+    padding: 0.2rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  u {
+    font-size: 1.1rem;
+    word-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+}
